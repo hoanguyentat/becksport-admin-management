@@ -29,7 +29,8 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/@nebular/theme/styles/prebuilt/cosmic.css",
-              "src/styles/styles.scss"
+              "src/styles/styles.scss",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": []
           },

@@ -1,9 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
-import { NbSidebarModule, NbMenuModule, NbActionsModule, NbCardModule, NbLayoutModule, NbTabsetModule, NbRouteTabsetModule, NbUserModule, NbSearchModule, NbCheckboxModule, NbPopoverModule, NbContextMenuModule, NbProgressBarModule } from '@nebular/theme';
+import {
+  NbSidebarModule,
+  NbMenuModule,
+  NbActionsModule,
+  NbCardModule,
+  NbLayoutModule,
+  NbTabsetModule,
+  NbRouteTabsetModule,
+  NbUserModule,
+  NbSearchModule,
+  NbCheckboxModule,
+  NbPopoverModule,
+  NbContextMenuModule, NbProgressBarModule
+} from '@nebular/theme';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -27,7 +39,7 @@ const NB_MODULES = [
   // NbSecurityModule, // *nbIsGranted directive
 ];
 
-const COMPONENTS = [HeaderComponent, SidebarComponent, NotFoundComponent];
+const COMPONENTS = [HeaderComponent, NotFoundComponent];
 
 
 @NgModule({
