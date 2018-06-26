@@ -28,8 +28,8 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "./node_modules/@nebular/theme/styles/prebuilt/default.css",
-              "src/styles.scss"
+              "./node_modules/@nebular/theme/styles/prebuilt/cosmic.css",
+              "src/app/styles/styles.scss"
             ],
             "scripts": []
           },
