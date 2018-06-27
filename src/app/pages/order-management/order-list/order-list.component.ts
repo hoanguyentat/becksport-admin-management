@@ -1,84 +1,85 @@
 import { Component, OnInit } from '@angular/core';
 import { LocalDataSource } from 'ng2-smart-table';
+import { Router } from '@angular/router';
 
 const MOCK_DATA = {
-  "paging": {
-    "page": 1,
-    "total": 200,
-    "page_size": 2
+  'paging': {
+    'page': 1,
+    'total': 200,
+    'page_size': 2
   },
-  "data": [
+  'data': [
     {
-      "id": "653678611405325",
-      "user_backend_id": "653678611405322",
-      "customer_name": "Phuong TH",
-      "customer_address": "Phương Mai, Hà Nội",
-      "total_products": 2,
-      "total_price": 1000000,
-      "price_unit": "VND",
-      "updated_at": 1529912852,
-      "created_at": 1529912852,
-      "user_backend_name": "Quang LH"
+      'id': '653678611405325',
+      'user_backend_id': '653678611405322',
+      'customer_name': 'Phuong TH',
+      'customer_address': 'Phương Mai, Hà Nội',
+      'total_products': 2,
+      'total_price': 1000000,
+      'price_unit': 'VND',
+      'updated_at': 1529912852,
+      'created_at': 1529912852,
+      'user_backend_name': 'Quang LH'
     },
     {
-      "id": "653678611405321",
-      "user_backend_id": "653678611405324",
-      "customer_name": "Phuong TH",
-      "customer_address": "Phương Mai, Hà Nội",
-      "total_products": 2,
-      "total_price": 1000000,
-      "price_unit": "VND",
-      "updated_at": 1529912852,
-      "created_at": 1529912852,
-      "user_backend_name": "Quang LH"
+      'id': '653678611405321',
+      'user_backend_id': '653678611405324',
+      'customer_name': 'Phuong TH',
+      'customer_address': 'Phương Mai, Hà Nội',
+      'total_products': 2,
+      'total_price': 1000000,
+      'price_unit': 'VND',
+      'updated_at': 1529912852,
+      'created_at': 1529912852,
+      'user_backend_name': 'Quang LH'
     },
     {
-      "id": "653678611405321",
-      "user_backend_id": "653678611405324",
-      "customer_name": "Phuong TH",
-      "customer_address": "Phương Mai, Hà Nội",
-      "total_products": 2,
-      "total_price": 1000000,
-      "price_unit": "VND",
-      "updated_at": 1529912852,
-      "created_at": 1529912852,
-      "user_backend_name": "Quang LH"
+      'id': '653678611405321',
+      'user_backend_id': '653678611405324',
+      'customer_name': 'Phuong TH',
+      'customer_address': 'Phương Mai, Hà Nội',
+      'total_products': 2,
+      'total_price': 1000000,
+      'price_unit': 'VND',
+      'updated_at': 1529912852,
+      'created_at': 1529912852,
+      'user_backend_name': 'Quang LH'
     },
     {
-      "id": "653678611405321",
-      "user_backend_id": "653678611405324",
-      "customer_name": "Phuong TH",
-      "customer_address": "Phương Mai, Hà Nội",
-      "total_products": 2,
-      "total_price": 1000000,
-      "price_unit": "VND",
-      "updated_at": 1529912852,
-      "created_at": 1529912852,
-      "user_backend_name": "Quang LH"
+      'id': '653678611405321',
+      'user_backend_id': '653678611405324',
+      'customer_name': 'Phuong TH',
+      'customer_address': 'Phương Mai, Hà Nội',
+      'total_products': 2,
+      'total_price': 1000000,
+      'price_unit': 'VND',
+      'updated_at': 1529912852,
+      'created_at': 1529912852,
+      'user_backend_name': 'Quang LH'
     },
     {
-      "id": "653678611405321",
-      "user_backend_id": "653678611405324",
-      "customer_name": "Phuong TH",
-      "customer_address": "Phương Mai, Hà Nội",
-      "total_products": 2,
-      "total_price": 1000000,
-      "price_unit": "VND",
-      "updated_at": 1529912852,
-      "created_at": 1529912852,
-      "user_backend_name": "Quang LH"
+      'id': '653678611405321',
+      'user_backend_id': '653678611405324',
+      'customer_name': 'Phuong TH',
+      'customer_address': 'Phương Mai, Hà Nội',
+      'total_products': 2,
+      'total_price': 1000000,
+      'price_unit': 'VND',
+      'updated_at': 1529912852,
+      'created_at': 1529912852,
+      'user_backend_name': 'Quang LH'
     },
     {
-      "id": "653678611405321",
-      "user_backend_id": "653678611405324",
-      "customer_name": "Phuong TH",
-      "customer_address": "Phương Mai, Hà Nội",
-      "total_products": 2,
-      "total_price": 1000000,
-      "price_unit": "VND",
-      "updated_at": 1529912852,
-      "created_at": 1529912852,
-      "user_backend_name": "Quang LH"
+      'id': '653678611405321',
+      'user_backend_id': '653678611405324',
+      'customer_name': 'Phuong TH',
+      'customer_address': 'Phương Mai, Hà Nội',
+      'total_products': 2,
+      'total_price': 1000000,
+      'price_unit': 'VND',
+      'updated_at': 1529912852,
+      'created_at': 1529912852,
+      'user_backend_name': 'Quang LH'
     }
   ]
 };
@@ -132,14 +133,14 @@ export class OrderListComponent implements OnInit {
         type: 'number'
       },
     }
-  }
+  };
 
   source: LocalDataSource = new LocalDataSource();
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    this.source.load(MOCK_DATA.data)
+    this.source.load(MOCK_DATA.data);
   }
 
   onDeleteConfirm(event): void {
@@ -148,6 +149,10 @@ export class OrderListComponent implements OnInit {
     } else {
       event.confirm.reject();
     }
+  }
+
+  onView(event): void {
+    this.router.navigate(['pages/order-management/order-detail/', event.data.id]);
   }
 
 }

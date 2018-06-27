@@ -4,6 +4,7 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { SharedModule } from '../../shared/shared.module';
 import { OrderManagemenRoutingtModule } from './order-management-routing.module';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { OrderDetailComponent } from './order-detail/order-detail.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
     SharedModule,
     Ng2SmartTableModule
   ],
-  declarations: [OrderListComponent]
+  declarations: [OrderListComponent, OrderDetailComponent]
 })
 export class OrderManagementModule { }
