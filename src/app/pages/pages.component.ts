@@ -8,7 +8,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'Quản lý sản phâm',
-    icon: 'fa fa-file-invoice-dollar',
+    icon: 'fa fa-book',
     link: '/pages/product-management',
     children: [
       {
@@ -23,12 +23,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'Quản lý đơn hàng',
-    icon: 'nb-keypad',
+    icon: 'fa fa-truck',
     link: '/pages/order-management',
   },
   {
     title: 'Quản lý tải khoản',
-    icon: 'nb-keypad',
+    icon: 'fa fa-user',
     link: '/pages/user-management',
   }
 ];
