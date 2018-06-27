@@ -1,13 +1,10 @@
-export interface Product {
-    brand: string;
+export interface ProductInOrderDetail {
     colors: string[];
-    count: number;
+    quantity: number;
     description: string;
     id: string;
     name: string;
     price: number;
     price_unit: string;
     sizes: number[];
-    url: string;
-    url_images: string[];
 }
