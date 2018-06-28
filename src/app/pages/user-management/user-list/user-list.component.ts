@@ -153,7 +153,7 @@ settings = {
   }
 
   onView(event): void {
-    this.router.navigate(['pages/order-management/order-detail/', event.data.id]);
+    this.router.navigate(['pages/user-management/', event.data.id]);
   }
 
 }
